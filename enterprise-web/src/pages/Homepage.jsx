@@ -1,15 +1,30 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Classes from "./Classes.jsx"; // Import Classes component
+import Profile from "./Profile.jsx"; // Import Profile component
+import Login from "./Login.jsx"; // Import Login component
 
 const HomePage = () => {
   return (
     <div>
+      <div className="logo-container">
+        <img
+          src="/img/logouni.jpg"
+          alt="University Logo"
+          className="logo-image"
+        />
+      </div>
+
       <header>
         <Navbar />
       </header>
+
       <main>
         <div className="home-content">
-          <h1>WELCOME TO UNIVERSITY OF GREENWICH</h1>
+          <h1>
+            WELCOME TO <br />
+            UNIVERSITY OF GREENWICH
+          </h1>
           <img
             src="/img/homepage.jpg"
             alt="University"
@@ -24,27 +39,18 @@ const HomePage = () => {
 const Navbar = () => {
   return (
     <nav className="navbar">
-      <ul className="nav-links">
+      <ul className="nav-links-left">
         <li>
           <Link to="/" className="nav-link">
             Home
           </Link>
         </li>
-        <li>
-          <Link to="/classes" className="nav-link">
-            Classes
-          </Link>
-        </li>
-        <li>
-          <Link to="/profile" className="nav-link">
-            Profile
-          </Link>
-        </li>
-        <li>
-          <Link to="/login" className="nav-link">
-            Login/Register
-          </Link>
-        </li>
+        <Classes /> {/* Include Classes component */}
+        <Profile />
+      </ul>
+
+      <ul className="nav-links-right">
+        <Login /> {/* Include Login component */}
       </ul>
     </nav>
   );

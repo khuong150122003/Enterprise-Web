@@ -4,26 +4,62 @@ html {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex-grow: 1;
+}
+
+/* Logo Styles */
+.logo-container {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 100;
+}
+
+.logo-image {
+  width: 150px;
+  height: auto;
 }
 
 /* Navbar Styles */
 .navbar {
   background-color: white;
-  padding: 10px;
+  padding: 10px 20px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.nav-links {
+/* Grouping the links on the left */
+.nav-links-left {
   list-style: none;
   display: flex;
-  justify-content: space-around;
+  gap: 15px;
+  margin-left: 120px;
 }
 
+/* For the Login/Register on the right */
+.nav-links-right {
+  list-style: none;
+}
+
+/* Link styles */
 .nav-link {
   text-decoration: none;
   color: black;
   font-size: 18px;
-  padding: 10px 20px;
+  padding: 10px 15px;
   transition: background-color 0.3s ease;
 }
 
@@ -33,11 +69,18 @@ html {
   border-radius: 4px;
 }
 
+/* Logo Container */
+.logo-container {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+}
+
 /* Hero Section Styles */
 .home-content {
   position: relative;
   text-align: center;
-  color: white;
+  color: rgb(22, 51, 196);
 }
 
 .hero-image {
@@ -48,11 +91,55 @@ html {
 
 .home-content h1 {
   position: absolute;
-  top: 50%;
+  top: 20%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 3rem;
-  background-color: rgba(0, 0, 0, 0.5);
+  font-size: 30px;
   padding: 10px;
   border-radius: 10px;
+  text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.7);
+  line-height: 1.5;
+}
+/* Footer Styles */
+.Footer-container {
+  background-color: rgba(0, 0, 0, 0.986);
+  color: white;
+  width: 100%;
+  display: flex;
+  justify-content: space-between; /* Separates left and right content */
+  align-items: center;
+  height: 50px;
+  padding: 0 40px; /* Adds more padding to both left and right sides */
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+/* Contact information styles */
+.contact-info {
+  display: flex;
+  flex-direction: row; /* Makes the contact info items appear side by side */
+  gap: 150px; /* Adds spacing between the phone number and email */
+}
+
+.contact-info p {
+  margin: 0;
+  color: white;
+}
+
+/* Footer links styles */
+.footer-links {
+  display: flex;
+  gap: 20px;
+  margin-right: 50px;
+}
+
+.footer-links p {
+  margin-left: 0;
+}
+
+.Footer-container a {
+  color: rgb(252, 252, 252);
+  text-decoration: none;
 }
