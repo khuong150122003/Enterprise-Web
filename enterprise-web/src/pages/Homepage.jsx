@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Classes from "./Classes.jsx"; // Import Classes component
-import Profile from "./Profile.jsx"; // Import Profile component
-import Login from "./Login.jsx"; // Import Login component
+import Classes from "./Classes.jsx";
+import Profile from "./Profile.jsx";
+import Login from "./Login.jsx";
 
 const HomePage = () => {
   return (
@@ -40,17 +40,17 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <ul className="nav-links-left">
-        <li>
-          <Link to="/" className="nav-link">
+        {/* <li>
+         <Link to="/" className="nav-link">
             Home
           </Link>
         </li>
-        <Classes /> {/* Include Classes component */}
-        <Profile />
+        <Classes /> 
+        <Profile />*/}
       </ul>
 
       <ul className="nav-links-right">
-        <Login /> {/* Include Login component */}
+        <Login />
       </ul>
     </nav>
   );
