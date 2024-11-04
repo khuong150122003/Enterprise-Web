@@ -1,17 +1,18 @@
-/* General Styles */
 body,
 html {
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
-  min-height: 100vh;
-  overflow: hidden;
+  height: 100vh;
+  overflow: hidden; /* Ẩn cuộn dọc */
+  display: flex;
+  flex-direction: column;
 }
 
 .App {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  height: 100vh;
+  overflow: hidden; /* Ẩn cuộn dọc */
 }
 
 main {

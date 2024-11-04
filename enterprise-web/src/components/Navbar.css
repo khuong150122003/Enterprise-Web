@@ -1,0 +1,22 @@
+.navbar {
+  background-color: white;
+  padding: 5px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px; /* Chiều cao cố định của navbar */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 0; /* Đảm bảo không có margin */
+}
+
+.logo-image {
+  height: 30px; /* Điều chỉnh kích thước logo nhỏ hơn */
+}
+
+nav a,
+.login-register a {
+  font-size: 16px; /* Giảm kích thước chữ để phù hợp với navbar nhỏ hơn */
+  margin: 0 10px;
+  text-decoration: none;
+  color: black;
+}
