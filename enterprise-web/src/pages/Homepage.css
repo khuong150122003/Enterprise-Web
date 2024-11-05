@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 80vh; /* Đảm bảo homepage chiếm chiều cao của viewport */
+  height: 90vh; /* Đảm bảo homepage chiếm chiều cao của viewport */
   overflow: hidden; /* Ẩn cuộn trong homepage */
   position: relative;
   text-align: center;
@@ -10,12 +10,14 @@
 
 .welcome-text {
   position: absolute;
-  top: 50%;
+  top: 25%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: #2a2e83;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  font-size: 1.5em; /* Adjust this value as needed */
 }
+
 .home-content {
   position: relative;
   text-align: center;
@@ -23,7 +25,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 80vh; /* Đặt chiều cao của .home-content là 80vh để không lấn sang footer */
+  height: 100vh; /* Đặt chiều cao của .home-content là 80vh để không lấn sang footer */
   overflow: hidden;
   margin: 0;
   padding: 0;

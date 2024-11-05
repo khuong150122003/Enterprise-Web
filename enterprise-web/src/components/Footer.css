@@ -1,28 +1,19 @@
-.Footer-container {
-  background-color: rgba(0, 0, 0, 0.986);
-  color: white;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 50px; /* Giữ chiều cao cố định của footer */
-  padding: 0 40px;
-  position: fixed;
-  bottom: 0; /* Đảm bảo footer nằm sát cạnh dưới */
-  left: 0;
-  z-index: 1000;
-  margin: 0; /* Đảm bảo không có khoảng cách dư thừa */
-}
-
 .footer {
   background-color: black;
   color: white;
-  padding: 11px; /* Giảm padding trong footer */
   width: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  font-size: 14px; /* Giảm kích thước chữ nếu cần */
+  padding: 5px; /* Giảm padding để thu nhỏ chiều cao */
+  font-size: 14px; /* Đảm bảo kích cỡ chữ nhỏ và gọn gàng */
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 40px; /* Chiều cao cố định cho footer */
+  z-index: 1000;
+  overflow: hidden;
+  margin: 0;
 }
 
 .footer nav a {
