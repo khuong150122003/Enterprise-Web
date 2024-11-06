@@ -1,0 +1,91 @@
+/* Đặt nền màu xanh cho toàn bộ trang */
+.coordinator-page {
+  background-color: #cce0ff; /* Màu xanh lam nhạt cho nền */
+  padding: 150px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Đổ bóng nhẹ để nổi bật */
+  padding-top: 20px; /* Di chuyển toàn bộ nội dung lên phía trên */
+}
+
+.table-container {
+  margin-top: 0px; /* Điều chỉnh vị trí table so với container */
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+/* Đặt nền màu trắng cho bảng */
+table {
+  width: 100%;
+  background-color: #ffffff;
+  border-collapse: collapse;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Phong cách cho hàng và cột của bảng */
+table,
+th,
+td {
+  border: 1px solid #ddd;
+  text-align: center;
+  padding: 12px;
+}
+
+.profile-photo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.edit-btn {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.delete-btn {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.search-bar {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px; /* Điều chỉnh khoảng cách giữa search bar và bảng */
+  justify-content: flex-start; /* Căn trái cho search bar */
+  gap: 8px;
+}
+
+.search-bar input[type="text"] {
+  width: 250px;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.search-bar .search-button {
+  padding: 8px 12px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.confirm-delete-btn {
+  background-color: #ea4545;
+}
